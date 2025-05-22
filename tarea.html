@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Semántico</title>
+
+    <!-- FavIcon -->
+    <link rel="shortcut icon" href="img/imagen.jpg" type="image/x-icon">
+
+</head>
+<body>
+    
+    <h1>Html Semántico</h1>
+
+    <section>
+        <h3>Etiquetas de Selección</h3>
+        <label for="ciudad">Selecciona tu ciudad: </label>
+        <select name="ciudad" id="ciudad">
+            <option value="madrid">Madrid</option>
+            <option value="barcelona">Barcelona</option>
+            <option value="valencia">Valencia</option>
+            <option value="sevilla">Sevilla</option>
+        </select>
+    </section>
+
+    <section>
+        <h3>Etiqueta de Lista de Datos</h3>
+        <label for="navegador">Elige tu navedador: </label>
+        <input list="navegadores" id="navegador">
+        <datalist id="navegadores">
+            <option value="Chrome">
+            <option value="Firefox">
+            <option value="Edge">
+            <option value="Opera">
+    </section>
+
+    <section>
+        <h3>Imágenes en HTML</h3>
+
+        <img src="img/imagen.jpg" alt="developer" width="300" height="200">
+    </section>
+
+    <section>
+        <h3>Audios en HTML</h3>
+        <audio controls src="audio.mp3">
+            <p>Tu navegador no soporta el elemento <code>audio</code>.</p>
+        </audio>    
+    </section>
+
+    <section>
+        <h3>Vídeos en HTML</h3>
+        <video controls src="Video.mp4" width="300" height="200">
+            
+        </video>
+    </section>
+
+    <section>
+        <h3>Vídeos en HTML desde Youtube</h3>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/--U0uLS7oCo?si=iUCQHxv7rfMhu_tM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+
+    <section>
+        <h3>Etiqueta iFrame</h3>
+        <iframe src="https://es.wikipedia.org/wiki/Metadatos" frameborder="0" width="500" height="300"></iframe>
+    </section>
+
+    <section>
+        <h3>Etiqueta Table</h3>
+        <table border="1" cellpadding="10" cellspacing="0" bgcolor="lightblue" align="center">
+            <tr>
+                <th>Nombre</th>
+                <th>Edad</th>
+                <th>Ciudad</th>
+            </tr>
+
+            <tr>
+                <td>Ana</td>
+                <td>28</td>
+                <td>Piura</td>
+            </tr>
+
+            <tr>
+                <td>Carlos</td>
+                <td>35</td>
+                <td>Buenos Aires</td>
+            </tr>
+        </table>
+    </section>
+
+    
+
+</body>
+</html>
