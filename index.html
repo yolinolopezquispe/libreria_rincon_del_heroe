@@ -2,107 +2,226 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Librería de cómics y novelas gráficas">
-    <meta name="author" content="Yolino Lopez Quispe">
-    <title>Librería de Cómics "El Rincón del Héroe"</title>
-    <link rel="shortcut icon" href="img/batman.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/styles.css"> </head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Librería de cómics y mangas - El Rincón del Héroe" />
+    <meta name="author" content="Yolino Lopez Quispe" />
+    <title>El Rincón del Héroe</title>
+    <link rel="shortcut icon" href="img/batman.ico" type="image/x-icon" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
 
 <body>
 
-    <header>
-        <h1>El Rincón del Héroe</h1>
-        <nav>
-            <ul>
-                <li><a href="#novedades">Novedades</a></li>
-                <li><a href="#catalogo">Catálogo</a></li>
-                <li><a href="#eventos">Eventos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="img/batman.ico" alt="Logo El Rincón del Héroe" width="30" height="30"
+                    class="d-inline-block align-text-top me-2">
+                El Rincón del Héroe
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#novedades">Novedades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#catalogo">Catálogo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-light text-center py-5">
+        <div class="container">
+            <h1 class="display-4 mb-3">Bienvenidos a <span class="text-primary">El Rincón del Héroe</span></h1>
+            <p class="lead">Tu tienda favorita de cómics y mangas, donde cada historia cobra vida.</p>
+            <a href="#catalogo" class="btn btn-primary btn-lg mt-3">Explora Nuestro Catálogo</a>
+        </div>
     </header>
 
-
-    <main>
+    <main class="container">
         <section id="novedades">
-            <h2>Novedades</h2>
-            <article>
-                <h3>Nuevo Lanzamiento: "La Saga de los Eternos"</h3>
-                <img src="img/Eternos1Destacada.jpg" alt="Portada del cómic La Saga de los Eternos" width="400" height="300">
-
-                <p>Los Eternos son una raza ficticia de humanoides que aparecen en los cómics estadounidenses publicados por Marvel Comics.
-                    Fueron creados por Jack Kirby e hicieron su primera aparición en The Eternals # 1 (julio de 1976).</p>
-
-                <p>En el Universo Marvel, los Eternos son una rama de la humanidad conocida como Homo inmortalis, creada hace un millón de años por los enigmáticos
-                    alienígenas Celestiales para defender la Tierra con sus poderes y habilidades sobrehumanos. Sus principales adversarios son los Deviantes,
-                    que comparten un origen similar y representan una amenaza regular para la humanidad. Debido a su inmortalidad virtual, los Eternos se han aislado
-                    en gran medida de los humanos, con su estado de dios formando la base de varias figuras mitológicas alrededor del mundo.</p>
-                <p><a href="eternals_detail.html">Ver más</a></p>
-            </article>
+            <h2 class="text-center mb-4">Novedades</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4 transition-card">
+                    <div class="card h-100">
+                        <img src="img/diversidad.webp" class="card-img-top img-fluid imgCard"
+                            alt="Portada del cómic La Saga de los Eternos">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Antología para celebrar la diversidad</h5>
+                            <p class="card-text">Panini lanza el tomo del Orgullo de 2025, en un formato de tapa dura
+                                con un canto multicolor, una antología de autores queer y personajes del colectivo, una
+                                celebración necesaria.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-auto">
+                                <div class="price-section">
+                                    <span class="list-price text-decoration-line-through me-2">S/ 149.99</span>
+                                    <span class="offer-price fw-bold">S/ 99.99</span>
+                                </div>
+                                <a href="dc-pride.html" class="btn btn-primary">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 transition-card">
+                    <div class="card h-100">
+                        <img src="img/la-conserje-de-los-grandes-almacenes.jpg" class="card-img-top img-fluid imgCard"
+                            alt="Portada del cómic La Saga de los Eternos">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">La conserje de los grandes almacenes</h5>
+                            <p class="card-text">Son muchos los clientes que pasan todos los días por un centro
+                                comercial. Algunos van en busca de cosas que necesitan. Otros se dejan llevar por el
+                                azar y terminan encontrando cosas que no esperaban.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-auto">
+                                <div class="price-section">
+                                    <span class="list-price text-decoration-line-through me-2">S/ 129.99</span>
+                                    <span class="offer-price fw-bold">S/ 79.99</span>
+                                </div>
+                                <a href="la-conserje-de-los-grandes-almacenes.html" class="btn btn-primary">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 transition-card">
+                    <div class="card h-100">
+                        <img src="img/castigador.png" class="card-img-top img-fluid imgCard"
+                            alt="Portada del cómic La Saga de los Eternos">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">La maldición de Frankencastle</h5>
+                            <p class="card-text">Rick Remender fusiona de forma maravillosa la estética de terror de La
+                                Hammer de los años setenta con la estética de terror más universal. Además, hace un
+                                trabajo de ingeniería uniendo terror occidental.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-auto">
+                                <div class="price-section">
+                                    <span class="list-price text-decoration-line-through me-2">S/ 139.99</span>
+                                    <span class="offer-price fw-bold">S/ 89.99</span>
+                                </div>
+                                <a href="la-maldicion-frank-castle.html" class="btn btn-primary">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section id="catalogo">
-            <h2>Catálogo</h2>
-            <article>
-                <h3>Cómics de Superhéroes</h3>
-                <img alt="Comics de SuperHeroes" src="img/comics-superheroes.jpg" width="400" height="300">
-                <p>Encuentra tus héroes favoritos de Marvel, DC y más.</p>
-                <p><a href="superheroes_detail.html">Ver más</a></p>
-            </article>
-            <article>
-                <h3>Manga</h3>
-                <img alt="Mangas" src="img/mangas.jpg" width="400" height="300">
-                <p>Desde shonen hasta shojo, tenemos manga para todos los gustos.</p>
-                <p><a href="manga_detail.html">Ver más</a></p>
-            </article>
-            <article>
-                <h3>Novelas Gráficas</h3>
-                <img alt="Novelas Graficas" src="img/novelgraficas.jpg" width="400" height="300">
-                <p>Historias profundas y arte impresionante en formato de novela gráfica.</p>
-                <p><a href="graphic_novels_detail.html">Ver más</a></p>
-            </article>
+            <h2 class="text-center mb-4">Catálogo</h2>
+            <div class="row g-4">
+                <div class="col-md-4 mb-4 transition-card">
+                    <div class="card h-100">
+                        <img src="img/xmen.png" class="card-img-top img-fluid imgCard" alt="Cómics de Superhéroes">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">X-Men '97: Grandes X-Periencias</h5>
+                            <p class="card-text">¡El prólogo oficial a X-Men '97! La Patrulla-X ha vuelto y lo años noventa nunca han tenido mejor aspecto. En este volumen específicamente creado por los responsables de la teleserie</p>
+                            <div class="d-flex justify-content-between align-items-center mt-auto">
+                                <div class="price-section">
+                                    <span class="list-price text-decoration-line-through me-2">S/ 99.99</span>
+                                    <span class="offer-price fw-bold">S/ 39.99</span>
+                                </div>
+                                <a href="x-men.html" class="btn btn-primary">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 transition-card">
+                    <div class="card h-100">
+                        <img src="img/joker.jpg" class="card-img-top img-fluid imgCard" alt="Cómics de Superhéroes">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Biografía no autorizada: El origen del Joker</h5>
+                            <p class="card-text">¡Una colección de 10 entregas semanales con las mejores historias contemporáneas (y algún que otro clásico) del villano! Autores como Scott Snyder, Greg Capullo, Ed Brubaker, Doug Mahnke, Tom King.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-auto">
+                                <div class="price-section">
+                                    <span class="list-price text-decoration-line-through me-2">S/ 89.99</span>
+                                    <span class="offer-price fw-bold">S/ 49.99</span>
+                                </div>
+                                <a href="joker.html" class="btn btn-primary">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 transition-card">
+                    <div class="card h-100">
+                        <img src="img/akane.jpg" class="card-img-top img-fluid imgCard" alt="Cómics de Superhéroes">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Akane Banashi 05</h5>
+                            <p class="card-text">Akane se ha convertido en la diana de Rien Konjakuan, apodado el Aplastanovatos, ¡y se la devuelve sobre el escenario, en una actuación de apertura! </p>
+                            <div class="d-flex justify-content-between align-items-center mt-auto">
+                                <div class="price-section">
+                                    <span class="list-price text-decoration-line-through me-2">S/ 139.99</span>
+                                    <span class="offer-price fw-bold">S/ 59.99</span>
+                                </div>
+                                <a href="akane.html" class="btn btn-primary">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
-
-        <section id="eventos">
-            <h2>Eventos</h2>
-            <article>
-                <h3>Firma de Autógrafos con Famosos</h3>
-                <p>¡No te pierdas la oportunidad de conocer a tu autor favorito!</p>
-                <p>15 de junio de 2025</p>
-                <p><a href="autograph_signing_detail.html">Ver más</a></p>
-            </article>
-            <article>
-                <h3>Convención de Cómics</h3>
-                <p>Tres días de paneles, cosplays y mucha diversión.</p>
-                <img src="img/convencion.jpg" alt="Interior de una librería de cómics con gente leyendo" width="400" height="300">
-                <p><a href="comic_convention_detail.html">Ver más</a></p>
-            </article>
+        <section id="contacto" class="mt-5 bg-light p-5 rounded">
+            <h2 class="text-center mb-4">Contáctanos</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <form class="contact-form">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nombre Completo:</label>
+                            <input type="text" class="form-control" id="name" placeholder="Tu nombre" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Correo Electrónico:</label>
+                            <input type="email" class="form-control" id="email" placeholder="tu.correo@ejemplo.com"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="subject" class="form-label">Asunto:</label>
+                            <input type="text" class="form-control" id="subject" placeholder="Asunto de tu mensaje">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Tu Mensaje:</label>
+                            <textarea class="form-control" id="message" rows="5"
+                                placeholder="Escribe tu mensaje aquí..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary mt-3">Enviar Mensaje</button>
+                    </form>
+                    <div class="text-center mt-4 direccionContacto">
+                        <p>📍 Calle Militar 209, Pomabamba, Ancash, Perú</p>
+                        <p>📞 962 183 930</p>
+                        <p>📧 <a href="mailto:yolinolopez@libreriaheroes.pe">yolinolopez@libreriaheroes.pe</a></p>
+                    </div>
+                </div>
+            </div>
         </section>
 
-
-        <section id="contacto">
-            <h2>Contacto</h2>
-            <address>
-                <p>Dirección: Calle Militar 209, Pomabamba, Ancash, Perú</p>
-                <p>Teléfono: 962 183 930</p>
-                <p>Email: <a href="mailto:yolinolopez@libreriaheroes.pe">yolinolopez@libreriaheroes.pe</a></p>
-            </address>
-        </section>
     </main>
 
-
-    <footer>
-        <p>&copy; 2025 El Rincón del Héroe</p>
-        <p>Síguenos en nuestras redes sociales:</p>
-        <ul>
-            <li><a href="https://www.facebook.com/elrincondelheroepagofi">Facebook</a></li>
-            <li><a href="https://x.com/Axel_AlvGar94">Twitter</a></li>
-            <li><a href="https://www.instagram.com/el_rincon_del_heroe_/">Instagram</a></li>
-        </ul>
+    <footer class="mt-5">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <h5>Contacto</h5>
+                    <ul class="list-unstyled">
+                        <li>📍 Calle Militar 209, Pomabamba, Ancash, Perú</li>
+                        <li>📞 962 183 930</li>
+                        <li>📧 <a href="mailto:yolinolopez@libreriaheroes.pe">yolinolopez@libreriaheroes.pe</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <h5>Síguenos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="https://www.facebook.com/elrincondelheroepagofi" target="_blank">Facebook</a></li>
+                        <li><a href="https://x.com/Axel_AlvGar94" target="_blank">Twitter</a></li>
+                        <li><a href="https://www.instagram.com/el_rincon_del_heroe_/" target="_blank">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <p>&copy; 2025 El Rincón del Héroe. Todos los derechos reservados.</p>
+        </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
 
 </html>
